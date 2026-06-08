@@ -1,0 +1,32 @@
+# UTSSRP 2026 — conda environment for the student materials.
+#
+# The TA sets this up once on the lab machines:
+#     conda env create -f environment.yml
+#     conda activate utssrp2026
+#     python -m ipykernel install --user --name utssrp2026 --display-name "Python (utssrp2026)"
+#
+# The notebooks themselves never install anything — if a cell reports a missing package, grab the TA.
+# GaiaXPy is needed ONLY to reconstruct real Gaia spectra from the raw archive; the shipped notebooks
+# run without it (they reconstruct from a stored basis).
+name: utssrp2026
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - astropy
+  - h5py            # reading the real xp_apogee_cat.h5 catalog
+  - jupyter
+  - jupyterlab
+  - ipykernel
+  - umap-learn      # nonlinear dimensionality reduction (NB1 EDA stretch)
+  - statsmodels     # OLS summary (p-values / CIs) for the NB1 interpretation section
+  - shap            # model interpretability — hand-computed for linear (NB1), library-based for the nonlinear models (NB2)
+  - pip
+  - pip:
+      - gaiaxpy     # optional: real Gaia XP spectrum reconstruction (real-data path only)
