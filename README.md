@@ -92,7 +92,10 @@ utssrp-2026/
 ├── 02a_tune_knn.ipynb                 NB2 — your tuning lab · A = K-nearest neighbors
 ├── 02b_tune_random_forest.ipynb       NB2 — your tuning lab · B = random forest
 ├── 02c_tune_neural_net.ipynb          NB2 — your tuning lab · C = neural network
-├── 03_quantifying_uncertainty.ipynb   NB3 — turn predictions into intervals  (per-model split in progress)
+├── 03_uncertainty_common.ipynb        NB3 — quantify uncertainty (everyone)
+├── 03a_uncertainty_knn.ipynb          NB3 — your UQ lab · A = K-nearest neighbors
+├── 03b_uncertainty_random_forest.ipynb NB3 — your UQ lab · B = random forest
+├── 03c_uncertainty_neural_net.ipynb   NB3 — your UQ lab · C = neural network
 ├── 04_conformal_prediction.ipynb      NB4 — intervals with a guarantee (everyone)
 ├── data/                              the datasets (mock shipped; real goes here)
 ├── models/                            your saved fitted models (experiment tracking)
@@ -115,7 +118,7 @@ below is the afternoon project work. A ★ marks a new topic Josh introduces in 
 | Tue Jun 9 | Debrief the EDA + your first regression | NB1 → **NB2** |
 | Wed Jun 10 ★ | Build the prediction pipeline (everyone) | **NB2** `02_pipeline_common` |
 | Thu Jun 11 | Tune *your* model (each student their own) | **NB2** `02a/02b/02c_tune_…` |
-| Fri Jun 12 ★ | Uncertainty quantification | **NB3** `03_quantifying_uncertainty` |
+| Fri Jun 12 ★ | Uncertainty quantification (common, then your model) | **NB3** `03_uncertainty_common` + `03a/03b/03c` |
 | Mon Jun 15 ★ | Conformal prediction | **NB4** `04_conformal_prediction` |
 | Tue Jun 16 | Your model + comparison (cross-check coverage) | NB4 |
 | Wed Jun 17 | Shore up results + build poster/talk | `communication/` |
