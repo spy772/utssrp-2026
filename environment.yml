@@ -24,6 +24,8 @@ dependencies:
   - jupyter
   - jupyterlab
   - ipykernel
+  - pytorch
+  - sbi
   - umap-learn      # nonlinear dimensionality reduction (NB1 EDA stretch)
   - statsmodels     # OLS summary (p-values / CIs) for the NB1 interpretation section
   - shap            # model interpretability — hand-computed for linear (NB1), library-based for the nonlinear models (NB2)
