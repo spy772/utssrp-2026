@@ -1,4 +1,20 @@
-# UTSSRP 2026 — Start here
+# UTSSRP 2026: Uncertainty Quantification for Predicting Stellar Properties from Gaia Spectra
+
+---
+
+## Final poster & report
+
+The finished write-up for this project — the academic poster presented at the closing lightning-talk
+session, and the full project report — are here:
+
+- **Poster:** [UTSSRP Poster — Uncertainty Quantification with Gaia Spectra](https://github.com/spy772/utssrp-2026/blob/main/Poster%20and%20Report/UTSSRP%20Poster%20Uncertainty%20Quantification%20with%20Gaia%20Spectra.pdf)
+- **Report:** [UTSSRP Project Report — Edward Tanurkov](https://github.com/spy772/utssrp-2026/blob/main/Poster%20and%20Report/UTSSRP%20Project%20Report%20-%20Edward%20Tanurkov.pdf)
+
+Both live in the [`Poster and Report/`](https://github.com/spy772/utssrp-2026/tree/main/Poster%20and%20Report) folder of this repo.
+
+---
+
+## Quick start
 
 Welcome! Over the next two weeks (June 8–19, 2026) you'll build machine-learning models that read a
 star's *Gaia* spectrum — really just **110 numbers** — and predict its physical properties:
@@ -9,10 +25,6 @@ start by getting to know the data, build a prediction pipeline, turn point predi
 and finish with **conformal prediction**, a method that gives intervals a coverage guarantee. Along the
 way you'll discover where those guarantees quietly break — which is exactly the kind of honest result
 that makes good science.
-
----
-
-## Quick start
 
 The lab machines already have everything installed, so this is fast. If your TA has set up the
 environment for you, you can skip straight to step 3.
@@ -87,6 +99,7 @@ goal (label transfer to the 220M stars with XP spectra but no labels).
 utssrp-2026/
 ├── README.md                          ← you are here
 ├── reference_and_glossary.md          key terms (one line each) + curated links
+├── Poster and Report/                 final poster (PDF) and full project report (PDF)
 ├── 01_explore_the_data.ipynb          NB1 — explore the data (everyone)
 ├── 02_pipeline_common.ipynb           NB2 — build the baseline pipeline (everyone)
 ├── 02a_tune_knn.ipynb                 NB2 — your tuning lab · A = K-nearest neighbors
@@ -128,6 +141,7 @@ below is the afternoon project work. A ★ marks a new topic Josh introduces in 
 The poster tells the full story (question · data · method · results · **limitations** · next steps);
 the lightning talk gives the question and the headline result and points people to the poster.
 *Lightning-talk length is currently assumed to be **~3 minutes (3–4 slides)** — **confirm with your TA.***
+The final poster and report from this project are linked above in [Final poster & report](#final-poster--report).
 
 ---
 
@@ -182,6 +196,10 @@ notebook. Ask a TA or the doctoral mentor; they're around every afternoon.
   <https://gaiaxpy.readthedocs.io/en/latest/usage.html>
 - **Conformal prediction primer** — Angelopoulos & Bates, *A Gentle Introduction to Conformal
   Prediction* (arXiv:2107.07511): <https://arxiv.org/abs/2107.07511>
+- **Final poster (PDF)**:
+  <https://github.com/spy772/utssrp-2026/blob/main/Poster%20and%20Report/UTSSRP%20Poster%20Uncertainty%20Quantification%20with%20Gaia%20Spectra.pdf>
+- **Final report (PDF)**:
+  <https://github.com/spy772/utssrp-2026/blob/main/Poster%20and%20Report/UTSSRP%20Project%20Report%20-%20Edward%20Tanurkov.pdf>
 
 For one-line definitions of every term (supervised learning, calibration, coverage, aleatoric vs
 epistemic, marginal vs conditional, and more), see **`reference_and_glossary.md`**.
